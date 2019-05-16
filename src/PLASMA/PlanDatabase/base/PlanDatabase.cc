@@ -534,7 +534,7 @@ namespace EUROPA{
 
       for (std::vector<std::pair<TokenId, TokenId> >::iterator it_b = choices.begin(); it_b != choices.end(); ++it_b) {
         const std::pair<TokenId, TokenId>& tokenPair = *it_b;
-        results.push_back(std::make_pair<ObjectId, std::pair<TokenId, TokenId> >(object, tokenPair));
+        results.push_back(std::make_pair(object, tokenPair));
         count++;
       }
     }
